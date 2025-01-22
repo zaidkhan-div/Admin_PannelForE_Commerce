@@ -14,7 +14,7 @@ const UpdateProduct = () => {
     const productData = { title, price, description };
 
     try {
-      const response = await fetch(`http://localhost:24853/update/${id}`, {
+      const response = await fetch(`https://node-setup-for-project.vercel.app/update/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
